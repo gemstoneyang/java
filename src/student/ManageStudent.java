@@ -30,5 +30,7 @@ public class ManageStudent {
         } else {
             System.out.println("Not Equal");
         }
+        System.out.println(a.hashCode());
+        System.out.println(b.hashCode());
     }
 }
