@@ -28,6 +28,11 @@ public class SocketServerSample {
                 System.out.println("Received data: "+receivedData);
                 in.close();
                 stream.close();
+                if(receivedData != null && "EXIT".equals(receivedData.toString())) {
+                    System.out.println("Stop SocketServer");
+                    client.close();
+                    break;
+                }
                 System.out.println("--------");
                 startReplyServer("OK", server);
             }

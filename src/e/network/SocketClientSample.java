@@ -19,7 +19,6 @@ public class SocketClientSample {
                 sendAndReceiveSocketData();
             } else {
                 sendSocketData(data);
-                sendAndReceiveSocketData();
                 System.out.println("Stop SocketClient");
                 break;
             }
